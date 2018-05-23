@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <h1 v-once>{{ title }}</h1>
+    <!--shorthand: instead a-href, just colon-->
+    <p>{{ sayHello() }} - <a v-bind:href='link'>Blog</a></p>
+    <p v-html='finishedLink'></p>
+</div>
+
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            title: 'Hello World!',
+            link: 'https://wloczykijada.adziklipa.me',
+            finishedLink: '<a href="https://wloczykijada.adziklipa.me">Blog</a>'
+        },
+        methods: {
+            sayHello: function() {
+                this.title = 'Hello';
+                return this.title;
+            }
+        }
+    });
+</script>
+</body>
+</html>

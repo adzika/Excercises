@@ -1,0 +1,36 @@
+#app {
+    text-align: center;
+}
+
+.players {
+    background-color: darkgreen;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 50px;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    grid-gap: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#start{
+    border: black 1px solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+#startButton {
+    background-color: #8dfc7e;
+    height: 40px;
+}
